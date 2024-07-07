@@ -1,0 +1,29 @@
+@Task_3_HostAddress = http://localhost:8080
+
+
+GET {{Task_3_HostAddress}}/api/todos
+Accept: application/json
+
+###
+
+GET {{Task_3_HostAddress}}/api/todos/find?q=Задача
+Accept: application/json
+
+###
+
+GET {{Task_3_HostAddress}}/api/todos/date?from=1683657600&to=1683744000
+Accept: application/json
+
+###
+
+POST {{Task_3_HostAddress}}/api/todos
+Content-Type: application/json
+Accept: application/json
+
+{
+  "name": "Название новой задачи",
+  "shortDesc": "Краткое описание",
+  "fullDesc": "Подробное описание задачи",
+  "date": "2024-05-09T09:00:00",
+  "status": false
+}

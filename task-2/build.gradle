@@ -1,0 +1,26 @@
+plugins {
+    id 'java'
+    id 'war'
+}
+
+group = 'com.project'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compileOnly group: 'jakarta.servlet', name: 'jakarta.servlet-api', version: '6.0.0'
+
+    implementation 'org.postgresql:postgresql:42.2.10'
+    implementation 'com.fasterxml.jackson.core:jackson-databind:2.12.5'
+    implementation 'com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.12.5'
+
+    testImplementation platform('org.junit:junit-bom:5.10.0')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+}
+
+test {
+    useJUnitPlatform()
+}

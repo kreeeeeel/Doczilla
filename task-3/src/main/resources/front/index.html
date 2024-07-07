@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Todo List</title>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <div class="sidebar">
+        <button class="btn btn-week" onclick="getWeekTasks()">Все задачи</button>
+        <button class="btn btn-today" onclick="getTodayTasks()">Сегодня</button>
+        <div id="datepicker" class="calendar"></div>
+        <label>
+            <input type="checkbox" class="filter-incomplete" onchange="toggleIncomplete(this.checked)"> Только невыполненные
+        </label>
+    </div>
+    <div class="main-content">
+        <div class="task-list">
+        </div>
+    </div>
+</div>
+<div class="overlay"></div>
+<div class="modal task-details">
+    <button class="btn-close">Готово</button>
+</div>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

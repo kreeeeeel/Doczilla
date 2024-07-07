@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Управление студентами</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+<div class="header">
+    <h1>Управление студентами</h1>
+    <button class="add-btn" id="openModal">Добавить студента</button>
+</div>
+
+<div id="studentModal" class="modal">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h3>Добавить студента</h3>
+            <span class="close">&times;</span>
+        </div>
+        <form id="studentForm">
+            <label for="firstName">Имя:</label>
+            <input type="text" id="firstName" name="firstName" required>
+
+            <label for="lastName">Фамилия:</label>
+            <input type="text" id="lastName" name="lastName" required>
+
+            <label for="middleName">Отчество:</label>
+            <input type="text" id="middleName" name="middleName">
+
+            <label for="birthDate">Дата рождения:</label>
+            <input type="date" id="birthDate" name="birthDate" required>
+
+            <label for="group">Группа:</label>
+            <input type="text" id="group" name="group" required>
+
+            <button type="submit">Добавить студента</button>
+        </form>
+    </div>
+</div>
+
+<h2>Список студентов</h2>
+<table id="studentsTable">
+    <thead>
+    <tr>
+        <th style="min-width: 80px">ID</th>
+        <th>Имя</th>
+        <th>Фамилия</th>
+        <th>Отчество</th>
+        <th>Дата рождения</th>
+        <th>Группа</th>
+    </tr>
+    </thead>
+    <tbody>
+    </tbody>
+</table>
+</body>
+</html>
