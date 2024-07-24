@@ -1,4 +1,4 @@
-const server = "http://localhost:8080/api/student";
+const server = "http://localhost:8080/Gradle___com_project___task_2_1_0_SNAPSHOT_war/api/student";
 
 const modal = $('#studentModal');
 modal.hide();

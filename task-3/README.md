@@ -17,6 +17,9 @@
 - 4) Переходите в папку src/main/resources/front и открываете в браузере index.html
 - 5) Наслаждаетесь
 
+### Видео
+[Ссылка на гугл диск](https://drive.google.com/file/d/1u3cqKX9HY14mkN2LJTWNhPtMMjZ1ctzT/view?usp=sharing)
+
 Итог:
 ![!](screen/1.png)
 ![!](screen/2.png)

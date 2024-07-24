@@ -53,7 +53,7 @@ public class DatabaseConfig {
     }
 
     public void deleteStudentById(UUID studentId) {
-        String query = "DELETE FROM students WHERE uid = ?";
+        String query = "DELETE FROM students WHERE id = ?";
         try (PreparedStatement preparedStatement = connection.prepareStatement(query)) {
             preparedStatement.setString(1, studentId.toString());
             preparedStatement.executeUpdate();
@@ -71,7 +71,7 @@ public class DatabaseConfig {
             while (resultSet.next()) {
 
                 StudentDao student = new StudentDao();
-                student.setId(UUID.fromString(resultSet.getString("uid")));
+                student.setId(UUID.fromString(resultSet.getString("id")));
                 student.setFirstName(resultSet.getString("first_name"));
                 student.setLastName(resultSet.getString("last_name"));
                 student.setMiddleName(resultSet.getString("middle_name"));

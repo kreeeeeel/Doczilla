@@ -25,6 +25,9 @@
 6. Запустите Docker и Tomcat Убедитесь, что Docker контейнер с PostgreSQL запущен. В IntelliJ IDEA или другом IDE запустите сервер Tomcat.
 7. Откройте resources/front/index.html. Воспользуйтесь веб-интерфейсом для работы со студентами.
 
+### Видео
+[Ссылка на гугл диск](https://drive.google.com/file/d/117vEzjpCTW-rXSFbdTFNiGRh7NQkKDpG/view?usp=sharing)
+
 ### Итоговый вид проекта
 ![!](screen/1.jpg)
 ![!](screen/2.jpg)
